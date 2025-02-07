@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+categories = ['A', 'B', 'C', 'D', 'E']
+values = [25, 40, 15, 30, 20]
+
+# Create the bar chart
+plt.bar(categories, values, color='skyblue')
+
+# Customize the chart
+plt.xlabel("Categories")
+plt.ylabel("Values")
+plt.title("Column Chart Example")
+plt.grid(axis='y', linestyle='--')
+
+# Show the chart
+plt.show()
+
+#To save the chart as an image:
+plt.savefig('column_chart.png')
